@@ -1,0 +1,69 @@
+version: 4.1.30
+steps:
+  - prompt: Open the browser and navigate to the specified website.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: example.com
+  - prompt: Open the browser and navigate to the specified website.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Open the browser and navigate to the specified website.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Open the browser and navigate to the specified website.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Open the browser and navigate to the specified website.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Open the browser and navigate to the specified website.
+    commands:
+      - command: hover-text
+        text: google.com
+        description: address bar with current URL
+        action: click
+      - command: type
+        text: example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Assert that the webpage loads without errors.
+    commands:
+      - command: assert
+        expect: Example Domain is visible on the page
+  - prompt: >-
+      Assert that the logo is displayed on the webpage.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: the logo is visible on the page
