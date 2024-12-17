@@ -1,0 +1,34 @@
+version: 4.1.30
+steps:
+  - prompt: Click on the "Sign In" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button in the top right corner
+        action: click
+  - prompt: Enter test credentials in the login form.
+    commands:
+      - command: hover-text
+        text: Email or phone
+        description: email input field
+        action: click
+      - command: type
+        text: testuser@example.com
+  - prompt: Enter test credentials in the login form.
+    commands:
+      - command: hover-text
+        text: Email or phone
+        description: email input field
+        action: click
+      - command: type
+        text: testuser@example.com
+  - prompt: Click the "Log In" or "Submit" button.
+    commands:
+      - command: hover-text
+        text: Next
+        description: next button in the login form
+        action: click
+  - prompt: Assert that the sign-in process completes successfully.
+    commands:
+      - command: assert
+        expect: the sign-in process completes successfully
